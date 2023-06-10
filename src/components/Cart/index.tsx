@@ -7,7 +7,7 @@ interface ShoppingCartProps {
 
 export function Cart({ quantity }: ShoppingCartProps) {
   return (
-    <ShoppingCartContainer quantity={quantity}>
+    <ShoppingCartContainer quantity={quantity} href="/checkout">
       <ShoppingCart size={22} weight="fill" />
     </ShoppingCartContainer>
   )

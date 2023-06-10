@@ -81,5 +81,5 @@ export const CoffeeListMiddle = styled.main`
 
   display: grid;
   grid-template-columns: repeat(auto-fill, 16rem);
-  gap: 2rem;
+  gap: 3rem 2rem;
 `

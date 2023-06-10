@@ -6,6 +6,8 @@ import {
   CoffeeListMiddle,
 } from './styles'
 
+import { coffees } from '../../fixtures/coffees.ts'
+
 export function CoffeeList() {
   return (
     <CoffeeListContainer>
@@ -13,7 +15,7 @@ export function CoffeeList() {
         <h2>Nossos cafés</h2>
 
         <div>
-          <CofeeListFilter $variant="secondary">TRADICIONAL</CofeeListFilter>
+          <CofeeListFilter $variant="primary">TRADICIONAL</CofeeListFilter>
           <CofeeListFilter $variant="primary">ESPECIAL</CofeeListFilter>
           <CofeeListFilter $variant="primary">COM LEITE</CofeeListFilter>
           <CofeeListFilter $variant="primary">ALCOÓLICO</CofeeListFilter>
@@ -22,16 +24,18 @@ export function CoffeeList() {
       </CoffeeListHeader>
 
       <CoffeeListMiddle>
-        <CoffeeCatalog />
-        <CoffeeCatalog />
-        <CoffeeCatalog />
-        <CoffeeCatalog />
-        <CoffeeCatalog />
-        <CoffeeCatalog />
-        <CoffeeCatalog />
-        <CoffeeCatalog />
-        <CoffeeCatalog />
-        <CoffeeCatalog />
+        {coffees.map((coffee) => {
+          return (
+            <CoffeeCatalog
+              id={coffee.id}
+              description={coffee.description}
+              name={coffee.name}
+              tags={coffee.tags}
+              path={coffee.path}
+              key={coffee.id}
+            />
+          )
+        })}
       </CoffeeListMiddle>
     </CoffeeListContainer>
   )

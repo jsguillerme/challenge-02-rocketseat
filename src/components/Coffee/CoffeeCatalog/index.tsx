@@ -10,19 +10,39 @@ import { ButtonIcon } from '../../Button/JustIcon'
 import { ShoppingCart } from 'phosphor-react'
 import { InputCounter } from '../Input'
 
-export function CoffeeCatalog() {
+export interface CoffeeCatalogProps {
+  id: string
+  path: string
+  name: string
+  description: string
+  tags: String[]
+}
+
+export function CoffeeCatalog({
+  id,
+  path,
+  description,
+  tags,
+  name,
+}: CoffeeCatalogProps) {
   return (
     <CoffeeCatalogContainer>
       <img
-        src={CoffeeTradicionalImg}
+        src={path}
         alt="Imagem de um café tradicional, preto com xicara branca visto de cima"
       />
 
       <CoffeeCatalogMid>
-        <CofeeListFilter $variant="secondary">TRADICIONAL</CofeeListFilter>
+        <div>
+          {tags.map((tag) => (
+            <CofeeListFilter key={id} $variant="secondary">
+              {tag.toUpperCase().trim()}
+            </CofeeListFilter>
+          ))}
+        </div>
 
-        <h2>Expresso Tradicional</h2>
-        <p>O tradicional café feito com água quente e grãos moídos</p>
+        <h2>{name}</h2>
+        <p>{description}</p>
       </CoffeeCatalogMid>
 
       <CoffeeCatalogFooter>

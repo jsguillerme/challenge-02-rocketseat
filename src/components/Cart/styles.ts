@@ -4,7 +4,7 @@ interface CartPropsStyle {
   quantity?: string
 }
 
-export const ShoppingCartContainer = styled.button<CartPropsStyle>`
+export const ShoppingCartContainer = styled.a<CartPropsStyle>`
   width: 3rem;
   height: 3rem;
   border-radius: 6px;

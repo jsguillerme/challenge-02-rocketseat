@@ -37,6 +37,15 @@ export const CoffeeCatalogMid = styled.section`
 
   gap: 0.7rem;
 
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+
+    padding: 0.2rem;
+  }
+
   & > h2 {
     font-family: 'Baloo 2', cursive;
     font-size: 1.25rem;
