@@ -4,7 +4,6 @@ import {
   CoffeeCatalogMid,
   CoffeeFooterPrice,
 } from './styles'
-import CoffeeTradicionalImg from '../../../assets/coffee-images/Image-1.svg'
 import { CofeeListFilter } from '../styles'
 import { ButtonIcon } from '../../Button/JustIcon'
 import { ShoppingCart } from 'phosphor-react'
