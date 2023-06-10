@@ -3,6 +3,7 @@ import {
   CofeeListFilter,
   CoffeeListContainer,
   CoffeeListHeader,
+  CoffeeListMiddle,
 } from './styles'
 
 export function CoffeeList() {
@@ -20,7 +21,18 @@ export function CoffeeList() {
         </div>
       </CoffeeListHeader>
 
-      <CoffeeCatalog />
+      <CoffeeListMiddle>
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+        <CoffeeCatalog />
+      </CoffeeListMiddle>
     </CoffeeListContainer>
   )
 }

@@ -73,3 +73,13 @@ export const CofeeListFilter = styled.button<CoffeeFilterProps>`
     transition: all 0.2s ease-in-out;
   }
 `
+
+export const CoffeeListMiddle = styled.main`
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 16rem);
+  gap: 2rem;
+`

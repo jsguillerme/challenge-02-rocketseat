@@ -10,8 +10,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export function Button({ isSecondary, text, icon, ...props }: ButtonProps) {
   return isSecondary ? (
     <ButtonSecondary {...props}>
+      {icon ? <IconStyleButton>{icon}</IconStyleButton> : null}
       {text}
-      {icon ? <IconStyleButton>icon</IconStyleButton> : null}
     </ButtonSecondary>
   ) : (
     <ButtonPrimary {...props}>{text}</ButtonPrimary>
