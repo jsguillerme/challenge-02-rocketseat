@@ -7,7 +7,7 @@ interface CoffeeFilterProps {
 
 export const CoffeeListContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   padding: 2rem 10rem;
 `
@@ -37,7 +37,6 @@ export const CoffeeListHeader = styled.nav`
 `
 export const CofeeListFilter = styled.button<CoffeeFilterProps>`
   padding: 0.3rem 0.6rem;
-  max-width: 8rem;
   max-width: 8rem;
 
   display: ${(props) => `${props.$invisibly ? 'none' : 'flex'}`};
