@@ -112,7 +112,7 @@ export const coffees: CoffeeCatalogProps[] = [
     tags: ['especial'],
   },
   {
-    id: '0',
+    id: '14',
     name: 'Irlandês',
     path: image0,
     description: 'Bebida a base de café, uísque irlandês, açúcar e chantilly',

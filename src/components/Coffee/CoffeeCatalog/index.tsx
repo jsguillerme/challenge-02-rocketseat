@@ -34,7 +34,8 @@ export function CoffeeCatalog({
       <CoffeeCatalogMid>
         <div>
           {tags.map((tag) => (
-            <CofeeListFilter key={id} $variant="secondary">
+            // eslint-disable-next-line react/jsx-key
+            <CofeeListFilter $variant="secondary">
               {tag.toUpperCase().trim()}
             </CofeeListFilter>
           ))}
@@ -48,7 +49,7 @@ export function CoffeeCatalog({
         <CoffeeFooterPrice>
           R$ <strong>9,90</strong>
         </CoffeeFooterPrice>
-        <InputCounter />
+        <InputCounter $counter={0} />
         <ButtonIcon icon={<ShoppingCart size={24} weight="fill" />} />
       </CoffeeCatalogFooter>
     </CoffeeCatalogContainer>
