@@ -1,14 +1,15 @@
+import { InputHTMLAttributes } from 'react'
 import { InputDiv, InputTextContainer } from './styles'
 
-interface InputTextProps {
+interface InputTextProps extends InputHTMLAttributes<HTMLInputElement> {
   placeholder: string
   optional?: boolean
 }
 
-export function InputText({ placeholder, optional }: InputTextProps) {
+export function InputText({ placeholder, optional, ...props }: InputTextProps) {
   return (
     <InputDiv>
-      <InputTextContainer placeholder={placeholder} type="text" />
+      <InputTextContainer placeholder={placeholder} type="text" {...props} />
       {optional && <p>Optional</p>}
     </InputDiv>
   )

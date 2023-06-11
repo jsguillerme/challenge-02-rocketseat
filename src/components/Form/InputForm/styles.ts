@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const InputDiv = styled.div`
-  max-width: 28rem;
-  width: 100%;
   height: fit-content;
 
   display: flex;
@@ -11,6 +9,7 @@ export const InputDiv = styled.div`
 
   background: ${(props) => props.theme.base['base-input']};
   border-radius: 4px;
+  border: 1px solid ${(props) => props.theme.base['base-input']};
 
   position: relative;
 
@@ -19,6 +18,7 @@ export const InputDiv = styled.div`
     right: 18px;
     color: ${(props) => props.theme.base['base-label']};
     font-size: 0.875rem;
+    font-style: italic;
   }
 
   &:focus-within {
@@ -27,7 +27,7 @@ export const InputDiv = styled.div`
 `
 
 export const InputTextContainer = styled.input`
-  width: 24rem;
+  width: 80%;
   height: fit-content;
 
   padding: 0.75rem;
@@ -36,7 +36,7 @@ export const InputTextContainer = styled.input`
   align-items: center;
   justify-content: space-between;
 
-  border: 0;
+  border: 1px solid ${(props) => props.theme.base['base-input']};
   outline: 0;
   border-radius: 4px;
 

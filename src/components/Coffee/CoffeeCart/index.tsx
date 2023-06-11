@@ -5,7 +5,11 @@ import { InputCounter } from '../Input'
 import CoffeeTradicionalImg from '../../../assets/coffee-images/Image-1.svg'
 import { CoffeeFooterPrice } from '../CoffeeCatalog/styles'
 
-export function CoffeeCart() {
+interface CoffeeCartProps {
+  $quantity: number
+}
+
+export function CoffeeCart({ $quantity = 0 }: CoffeeCartProps) {
   return (
     <CoffeeCartContainer>
       <img src={CoffeeTradicionalImg} alt="" />
@@ -13,8 +17,8 @@ export function CoffeeCart() {
       <CoffeeCartDetails>
         <p>Expresso Tradicional</p>
         <div>
-          <InputCounter />
-          <Button isSecondary text="REMOVER" icon={<Trash />} />
+          <InputCounter $counter={$quantity} />
+          <Button $isSecondary $text="REMOVER" $icon={<Trash />} />
         </div>
       </CoffeeCartDetails>
 

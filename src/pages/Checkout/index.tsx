@@ -1,5 +1,5 @@
-import { InputText } from '../../components/Form/InputForm'
+import { FormularioCheckout } from '../../components/Form'
 
 export function Checkout() {
-  return <InputText />
+  return <FormularioCheckout />
 }

@@ -1,3 +1,12 @@
+import { CompleteOrder } from './ CompleteOrder'
+import { CoffeeSelecteds } from './CoffeeSelecteds'
+import { FormContainer } from './styles'
+
 export function FormularioCheckout() {
-  return <div></div>
+  return (
+    <FormContainer>
+      <CompleteOrder />
+      <CoffeeSelecteds />
+    </FormContainer>
+  )
 }

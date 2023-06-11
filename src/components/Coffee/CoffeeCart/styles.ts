@@ -36,12 +36,16 @@ export const CoffeeCartDetails = styled.section`
 
   & > div {
     max-width: 11rem;
-    height: 2.5rem;
+    height: 2rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    gap: 0.2rem;
+    gap: 0.5rem;
+
+    & > button {
+      font-size: 0.75rem;
+    }
   }
 `

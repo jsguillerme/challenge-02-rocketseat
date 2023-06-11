@@ -24,7 +24,7 @@ export const InputContainer = styled.div`
     background: ${(props) => props.theme.base['base-button']};
 
     width: 1.5rem;
-    height: 2.375rem;
+    height: 2rem;
 
     color: ${(props) => props.theme.product.purple};
 
@@ -50,7 +50,7 @@ export const InputContainer = styled.div`
     text-align: center;
 
     width: 1.5rem;
-    height: 2.375rem;
+    height: 2rem;
 
     background: ${(props) => props.theme.base['base-button']};
   }

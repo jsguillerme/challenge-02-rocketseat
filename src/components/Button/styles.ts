@@ -14,7 +14,7 @@ export const ButtonContainerBase = styled.button`
   gap: 0.5rem;
   font-weight: bold;
   line-height: 160%;
-  font-size: 16px;
+  font-size: 0.875rem;
 
   cursor: pointer;
   color: ${(props) => props.theme.base.white};
@@ -26,6 +26,7 @@ export const ButtonContainerBase = styled.button`
 `
 export const ButtonPrimary = styled(ButtonContainerBase)`
   background-color: ${(props) => props.theme.product.yellow};
+  max-height: 2.875rem;
 
   &:hover {
     background-color: ${(props) => props.theme.product['yellow-dark']};

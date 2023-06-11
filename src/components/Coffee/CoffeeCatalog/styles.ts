@@ -78,7 +78,7 @@ export const CoffeeFooterPrice = styled.div`
 
   & > strong {
     font-family: 'Baloo 2', cursive;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 130%;
     font-weight: 800;
   }
