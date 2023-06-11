@@ -21,7 +21,7 @@ export const CoffeeSelectedsList = styled.div`
   max-width: 448px;
   height: 500px;
   background: ${(props) => props.theme.base['base-card']};
-  padding: 2.5rem;
+  padding: 2rem;
 
   border-radius: 6px 44px 6px 44px;
 
@@ -39,6 +39,7 @@ export const CoffeeList = styled.section`
 
   overflow: hidden;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
     width: 0.2rem;
